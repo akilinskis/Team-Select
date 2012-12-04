@@ -1,3 +1,5 @@
+import sys
+
 # Django settings for teamselect project.
 
 DEBUG = True
@@ -8,6 +10,11 @@ ADMINS = (
 )
 
 MANAGERS = ADMINS
+
+DB_NAME = 'teamselectdb'
+
+if 'test' in sys.argv:
+    DB_NAME = 'test_db'
 
 DATABASES = {
     'default': {
@@ -116,7 +123,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
+    'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )

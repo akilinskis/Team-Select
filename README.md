@@ -2,7 +2,6 @@ Team-Select
 ===========
 
 Team Selection App
-
 ===========
 
 How to run a server:

@@ -3,5 +3,6 @@
 *.pyc
 *.py~
 *.md~
+
 teamselectdb
 local_settings.py

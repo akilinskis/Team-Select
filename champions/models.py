@@ -14,7 +14,7 @@ class Champion(models.Model):
     adc = models.IntegerField("ad bottom lane position weight")
     support = models.IntegerField("support bottom lane position weight")
     # Will uncomment these once implemented
-    # counters = models.ForeignKey(CounterList, verbose_name="champion counters")
+    # counters = models.OneToOneField(CounterList, verbose_name="champion counters", primary_key=True)
     # attributes = models.ManyToManyField(Attribute)
     # compositions = models.ManyToManyField(Composition)
     

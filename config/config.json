@@ -1,0 +1,32 @@
+{
+    "champions" : [
+        {
+            "name": "Morgana",
+            "positions": {
+                "top": 10,
+                "jungle": 0,
+                "mid": 65,
+                "adc": 0,
+                "support": 25
+            },
+            "counters": [
+                {
+                    "name": "Cassiopeia",
+                    "strength": 40
+                }, {
+                    "name": "Evelynn",
+                    "strength": 75
+                }
+            ],
+            "compositions": [
+                {
+                "name": "Area of Effect",
+                "description": ""
+                }, {
+                "name": "Protect The Carry",
+                "description": ""
+                }
+            ]
+        }
+    ]
+}

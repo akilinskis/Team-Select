@@ -1,7 +1,4 @@
 from django.db import models
-# from counters.models import CounterList
-# from attributes.models import Attribute
-# from compositions.models import Composition
 
 # Champions Model
 # Defines the Champions table
@@ -13,10 +10,6 @@ class Champion(models.Model):
     mid = models.IntegerField("mid lane position weight")
     adc = models.IntegerField("ad bottom lane position weight")
     support = models.IntegerField("support bottom lane position weight")
-    # Will uncomment these once implemented
-    # counters = models.OneToOneField(CounterList, verbose_name="champion counters", primary_key=True)
-    # attributes = models.ManyToManyField(Attribute)
-    # compositions = models.ManyToManyField(Composition)
     
 
     def __unicode__(self):

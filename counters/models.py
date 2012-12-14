@@ -13,7 +13,7 @@ class CounterList(models.Model):
 # Defines the Counter table
 class Counter(models.Model):
     champion = models.ForeignKey(Champion)
-    strength = models.IntegerField("counter strength")
+    strength = models.IntegerField("counter strength (out of 100)")
     championlist = models.ForeignKey(CounterList, verbose_name="list of counters")
 
     def __unicode__(self):

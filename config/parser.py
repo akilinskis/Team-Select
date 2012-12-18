@@ -87,6 +87,6 @@ def reload_configs(request):
             update_positions(championobject, champion["positions"])
         update_counters(championobject, champion["counters"])
         update_champion_compositions(championobject, champion["compositions"])
-        response['status_code'] = 200
-        response["response"] = "Reload successful"
-        return HttpResponse(simplejson.dumps(response), mimetype="application/json")
+    response['status_code'] = 200
+    response["response"] = "Reload successful"
+    return HttpResponse(simplejson.dumps(response), mimetype="application/json")
